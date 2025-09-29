@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portafolio profesional de Hèctor Vega – asesor de Inglés B2" />
+    <title>Hèctor Vega — Asesor de Inglés B2</title>
+    <!-- Tipografía Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Navegación principal fija -->
+    <header class="site-header">
+      <nav class="container nav">
+        <a href="#inicio" class="logo" aria-label="Ir al inicio">HV</a>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sección 1: Presentación / Hero -->
+    <main id="inicio" class="hero">
+      <div class="container hero-grid">
+        <!-- Texto de presentación -->
+        <section class="hero-content" aria-labelledby="presentacion-title">
+          <h1 id="presentacion-title">Hèctor Vega</h1>
+          <p class="subtitle">Asesor de Inglés — Nivel B2</p>
+          <p class="description">
+            Acompaño a profesionales y estudiantes a mejorar su comunicación en inglés con
+            asesorías personalizadas, traducciones precisas y cursos conversacionales
+            prácticos y dinámicos.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contacto">Agendar asesoría</a>
+            <a class="btn btn-outline" href="#proyectos">Ver proyectos</a>
+          </div>
+        </section>
+
+        <!-- Imagen de perfil -->
+        <figure class="hero-photo">
+          <img src="https://res.cloudinary.com/dvc1s1dbi/image/upload/v1758905788/HVpot_lnt0bi.jpg" alt="Foto de perfil de Hèctor Vega" loading="lazy" />
+        </figure>
+      </div>
+    </main>
+
+    <!-- Sección 2: Experiencia -->
+    <section id="experiencia" class="section">
+      <div class="container">
+        <h2 class="section-title">Experiencia</h2>
+        <div class="experience-grid">
+          <!-- Lista de experiencias laborales -->
+          <article class="card">
+            <h3>Telecomunicaciones internacionales</h3>
+            <p class="muted">18 años de trabajo en estación de telecomunicaciones internacional.</p>
+          </article>
+          <article class="card">
+            <h3>Asesorías de Inglés</h3>
+            <p class="muted">15 años brindando asesorías en inglés: preparación académica y profesional.</p>
+          </article>
+          <article class="card">
+            <h3>Traducciones</h3>
+            <p class="muted">Traducciones técnicas y generales, con foco en claridad y fidelidad.</p>
+          </article>
+          <article class="card">
+            <h3>Cursos conversacionales</h3>
+            <p class="muted">Clases orientadas a la práctica, pronunciación y fluidez.</p>
+          </article>
+        </div>
+
+        <!-- Habilidades destacadas -->
+        <div class="skills">
+          <h3>Habilidades destacadas</h3>
+          <ul class="chip-list">
+            <li class="chip">Paciencia</li>
+            <li class="chip">Empatía</li>
+            <li class="chip">Adaptabilidad</li>
+            <li class="chip">Trabajo en equipo</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 3: Proyectos -->
+    <section id="proyectos" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Proyectos</h2>
+        <div class="projects-grid">
+          <!-- Tarjeta de proyecto: Clases de inglés -->
+          <article class="project-card">
+            <div class="project-image project-image-classes">
+              <div class="project-icon">📚</div>
+              <div class="project-overlay">
+                <span class="project-label">Clases Personalizadas</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Clases de Inglés B2</h3>
+              <p>Sesiones individuales y grupales enfocadas en gramática, vocabulario y pronunciación para alcanzar el nivel B2.</p>
+              <button class="btn btn-secondary" type="button">Ver más</button>
+            </div>
+          </article>
+
+          <!-- Tarjeta de proyecto: Traducción -->
+          <article class="project-card">
+            <div class="project-image project-image-translation">
+              <div class="project-icon">🌐</div>
+              <div class="project-overlay">
+                <span class="project-label">Servicios de Traducción</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Traducción Profesional</h3>
+              <p>Traducciones precisas de documentos técnicos, académicos y comerciales con terminología especializada.</p>
+              <button class="btn btn-secondary" type="button">Ver más</button>
+            </div>
+          </article>
+
+          <!-- Tarjeta de proyecto: Grupos de conversación -->
+          <article class="project-card">
+            <div class="project-image project-image-conversation">
+              <div class="project-icon">💬</div>
+              <div class="project-overlay">
+                <span class="project-label">Grupos de Conversación</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Grupos de Conversación</h3>
+              <p>Sesiones dinámicas en grupos pequeños para practicar speaking y listening en un ambiente relajado.</p>
+              <button class="btn btn-secondary" type="button">Ver más</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 4: Contacto -->
+    <section id="contacto" class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2 class="section-title">Contacto</h2>
+          <p class="muted">¿Listo para iniciar? Envíame un mensaje y te responderé pronto.</p>
+          <!-- Enlaces simulados a redes sociales -->
+          <ul class="socials">
+            <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+            <li><a href="#" aria-label="GitHub">GitHub</a></li>
+            <li><a href="#" aria-label="X (Twitter)">X</a></li>
+          </ul>
+        </div>
+
+        <!-- Formulario de contacto -->
+        <form class="contact-form" id="contactForm" novalidate>
+          <!-- Campo: Nombre -->
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+
+          <!-- Campo: Correo -->
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required />
+
+          <!-- Campo: Mensaje -->
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntame sobre tus objetivos" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 Hèctor Vega– Todos los derechos reservados</p>
+      </div>
+    </footer>
+
+    <!-- Script principal -->
+    <script src="./js/script.js"></script>
+  </body>
+  </html>
+
+
