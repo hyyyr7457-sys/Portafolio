@@ -187,7 +187,21 @@
     <script>
     (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Q_iWYYw1kbbiKHVZGAUJn";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
     </script>
-  </body>
+ <section id="welcome" class="section alt">
+  <div class="container" style="text-align: center;">
+    <h2 class="section-title">Welcome Presentation – English with Teacher Héctor Vega</h2>
+    <video controls width="720" style="margin: 20px auto; display: block;">
+      <source src="video_en.mp4" type="video/mp4">
+      Tu navegador no soporta el video.
+    </video>
+    <p style="margin-top: 20px;">
+      <a class="btn btn-primary" href="video_en.mp4" download>📥 Descargar versión en inglés</a>
+      <a class="btn btn-outline" href="video_es.mp4" download style="margin-left: 10px;">📥 Descargar versión en español</a>
+    </p>
+  </div>
+</section>
+ </body>
   </html>
+
 
 
