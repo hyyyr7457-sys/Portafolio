@@ -51,6 +51,22 @@
       </div>
     </main>
 
+  <!-- Sección: Presentación en video -->
+  <section id="presentacion-video" class="section">
+      <div class="container" style="text-align:center">
+        <h2 class="section-title">Welcome Presentation – English with Teacher Héctor Vega</h2>
+        <video class="square-video" controls preload="metadata">
+          <source src="./presentation/output/welcome_presentation_with_voice.mp4" type="video/mp4" />
+          <source src="./presentation/output/welcome_presentation.mp4" type="video/mp4" />
+          Tu navegador no soporta video HTML5.
+        </video>
+        <div class="video-links">
+          <a class="btn btn-primary" href="./presentation/output/welcome_presentation_with_voice.mp4" download>Descargar con voz y música</a>
+          <a class="btn btn-outline" href="./presentation/output/welcome_presentation.mp4" download>Descargar sin voz</a>
+        </div>
+      </div>
+  </section>
+
     <!-- Sección 2: Experiencia -->
     <section id="experiencia" class="section">
       <div class="container">
@@ -187,7 +203,7 @@
     <script>
     (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="Q_iWYYw1kbbiKHVZGAUJn";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
     </script>
- <section id="welcome" class="section alt">
+
   <div class="container" style="text-align: center;">
     <h2 class="section-title">Welcome Presentation – English with Teacher Héctor Vega</h2>
     <video controls width="720" style="margin: 20px auto; display: block;">
@@ -200,7 +216,7 @@
     </p>
   </div>
 </section>
- </body>
+
   </html>
 
 

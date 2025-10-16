@@ -1,0 +1,6 @@
+moviepy>=2.0.0
+pillow>=10.0.0
+imageio-ffmpeg>=0.4.9
+gTTS>=2.5.1
+pydub>=0.25.1
+numpy>=1.26.0
