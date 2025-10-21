@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clase 1 – Who We Are (2 h)</title>
+    <meta name="description" content="Clase 1 – Who We Are: trabajos, adjetivos, pronunciación y práctica oral." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>🔶 Clase 1 – “Who We Are” <span class="duration">(2 h)</span></h1>
+        <p class="subtitle">🎯 Objetivo: describir ocupaciones y características personales</p>
+        <nav class="top-nav" aria-label="Secciones de la clase">
+          <a href="#warmup">Warm‑up</a>
+          <a href="#grammar">Grammar</a>
+          <a href="#vocab">Vocabulary & Pronunciation</a>
+          <a href="#speaking">Speaking</a>
+          <a href="#homework">Homework</a>
+        </nav>
+        <div class="voice-picker">
+          <label for="voiceSelect">Audio IA (voz masculina americana si está disponible):</label>
+          <select id="voiceSelect" aria-label="Seleccionar voz para TTS"></select>
+          <button id="testVoice" class="btn" type="button">Probar voz</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="warmup" class="panel">
+        <h2>1️⃣ Warm‑up <span class="time-badge">10 min</span></h2>
+        <p class="section-note">Juego “Guess the Profession” con imágenes (iconos) y pistas por audio.</p>
+
+        <div id="guessGrid" class="grid guess-grid" aria-live="polite">
+          <!-- Las tarjetas se generan desde JavaScript -->
+        </div>
+
+        <aside class="example-callout">
+          <h3>Ejemplos a modelar</h3>
+          <ul>
+            <li>“I work in a court.” → “You’re a lawyer!”</li>
+            <li>“I study English three times a week.”</li>
+            <li>“I attend English classes on Tuesday, Thursday and Friday.”</li>
+            <li>“I am an eager student.”</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section id="grammar" class="panel">
+        <h2>2️⃣ Grammar Focus <span class="time-badge">25 min</span></h2>
+        <p class="section-note">To be + jobs + adjectives</p>
+
+        <div class="grid two-cols">
+          <div>
+            <h3>Tabla</h3>
+            <table class="grammar-table" aria-label="Tabla de verbo to be con profesiones">
+              <thead>
+                <tr>
+                  <th>Pronoun</th>
+                  <th>Verb</th>
+                  <th>Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>I</td>
+                  <td>am</td>
+                  <td>I am a lawyer.</td>
+                </tr>
+                <tr>
+                  <td>She</td>
+                  <td>is</td>
+                  <td>She is an engineer.</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="adjectives">
+              <h4>Adjetivos útiles</h4>
+              <p><span class="chip">friendly</span> <span class="chip">honest</span> <span class="chip">hardworking</span> <span class="chip">serious</span> <span class="chip">creative</span></p>
+            </div>
+          </div>
+
+          <div>
+            <h3>Construye tu oración</h3>
+            <form id="builderForm" class="builder" onsubmit="return false;">
+              <div class="form-row">
+                <label for="pronounSelect">Pronoun</label>
+                <select id="pronounSelect">
+                  <option value="I">I</option>
+                  <option value="You">You</option>
+                  <option value="He">He</option>
+                  <option value="She">She</option>
+                  <option value="We">We</option>
+                  <option value="They">They</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="professionInput">Profession</label>
+                <input id="professionInput" name="profession" placeholder="lawyer, engineer, teacher…" list="professionsList" />
+                <datalist id="professionsList"><!-- se completa por JS --></datalist>
+              </div>
+              <div class="form-row">
+                <label for="adjectiveInput">Adjective</label>
+                <input id="adjectiveInput" name="adjective" placeholder="friendly, honest…" list="adjectivesList" />
+                <datalist id="adjectivesList"><!-- se completa por JS --></datalist>
+              </div>
+              <div class="actions">
+                <button id="buildSentence" class="btn primary" type="button">Generar</button>
+                <button id="speakSentence" class="btn" type="button" disabled>Escuchar</button>
+              </div>
+            </form>
+            <p id="sentenceOutput" class="sentence-output" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="vocab" class="panel">
+        <h2>3️⃣ Vocabulary & Pronunciation <span class="time-badge">25 min</span></h2>
+        <p class="section-note">12 profesiones con pronunciación (IA) y eco. Escritura y spelling de cada palabra.</p>
+
+        <div id="vocabGrid" class="grid vocab-grid" aria-live="polite">
+          <!-- Tarjetas generadas por JS -->
+        </div>
+        <div class="inline-actions">
+          <button id="playAllOnce" class="btn">▶️ Escuchar todas</button>
+          <button id="playAllEcho" class="btn">🔁 Eco (todas)</button>
+        </div>
+      </section>
+
+      <section id="speaking" class="panel">
+        <h2>4️⃣ Speaking Practice <span class="time-badge">40 min</span></h2>
+
+        <div class="grid two-cols">
+          <div>
+            <h3>Role Play</h3>
+            <p>Prompt: <em>What do you do?</em> — <em>I’m a lawyer. I work in a law firm.</em></p>
+            <div class="roleplay">
+              <button id="rpGenerate" class="btn">🎲 Generar pareja</button>
+              <div id="rpOutput" class="role-output" aria-live="polite"></div>
+            </div>
+          </div>
+
+          <div>
+            <h3>Find Someone Who … (actividad rápida)</h3>
+            <ul id="fswList" class="fsw-list" aria-live="polite">
+              <!-- ítems por JS -->
+            </ul>
+          </div>
+        </div>
+
+        <div class="describe">
+          <h3>Describe 3 people you know</h3>
+          <div class="describe-list">
+            <div class="describe-item">
+              <textarea rows="3" placeholder="Person 1: name, job, where they work, 1–2 adjectives"></textarea>
+              <button class="btn speak-note" type="button">🔊 Speak</button>
+            </div>
+            <div class="describe-item">
+              <textarea rows="3" placeholder="Person 2: name, job, where they work, 1–2 adjectives"></textarea>
+              <button class="btn speak-note" type="button">🔊 Speak</button>
+            </div>
+            <div class="describe-item">
+              <textarea rows="3" placeholder="Person 3: name, job, where they work, 1–2 adjectives"></textarea>
+              <button class="btn speak-note" type="button">🔊 Speak</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="homework" class="panel">
+        <h2>5️⃣ Homework <span class="time-badge">20 min</span></h2>
+        <ol class="homework-list">
+          <li>
+            🎧 Ver <a href="https://www.youtube.com/results?search_query=BBC+Learning+English+Jobs+and+Occupations" target="_blank" rel="noopener">BBC Learning English — “Jobs and Occupations”</a>
+          </li>
+          <li>
+            📝 Escribir 10 oraciones propias con <strong>to be + profession + adjective</strong>.
+          </li>
+        </ol>
+        <div class="hw-writer">
+          <div class="inline-actions">
+            <button id="insertRandom" class="btn">➕ Añadir ejemplo aleatorio</button>
+            <button id="downloadHW" class="btn">⬇️ Descargar .txt</button>
+            <span id="hwCount" class="muted"></span>
+          </div>
+          <textarea id="hwTextarea" rows="8" placeholder="1) I am a teacher. I am friendly.
+2) She is an engineer. She is hardworking.
+..."></textarea>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <small>© 2025 Class 1 — Who We Are. Construido para práctica docente.</small>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
